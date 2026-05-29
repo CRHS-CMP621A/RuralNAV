@@ -37,5 +37,13 @@ async function initCamera() {
     console.log('Saved snapshot URL:', imageDataURL);
   });
   
-  // Start the camera automatically on load
+// Alternative: Start camera on the first tap anywhere on the screen
+document.addEventListener('touchstart', () => {
   initCamera();
+}, { once: true }); // { once: true } ensures it only fires on the very first tap
+
+video.addEventListener('playing', () => {
+  console.log("Camera is officially streaming!");
+  // Example: Turn a UI dot green or remove a loading spinner
+  // document.getElementById('status-dot').style.backgroundColor = 'red';
+});

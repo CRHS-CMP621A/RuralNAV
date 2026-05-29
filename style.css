@@ -10,3 +10,30 @@ body {
   color: white;
   background-color: black;
 }
+
+#pee {
+  display: grid;
+  margin: 40;
+  align-content: center;
+  font-family: "comic sans ms", "courier";
+  color: black;
+  background-image: url("https://bettysgraphics.neocities.org/images/backgrounds/pattern%20155.gif");
+}
+
+#corner {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+align-items: center;
+gap: 650px;
+width: 100%;
+}
+
+
+
+#webcam_PLACEHOLDER {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  min-height: 240px; /* Ensures it takes up space even if empty */
+  background-color: #222; /* If it stays black, the element is visible but stream failed */
+}
