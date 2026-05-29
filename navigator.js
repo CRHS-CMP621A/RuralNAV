@@ -1,8 +1,8 @@
 
 // VARIABLES
-const video = document.getElementbyId('webcam_PLACEHOLDER')
-    const button = document.getElementbyId('capture-btn_PLACEHOLDER')
-    const canvas = document.getElementyId('snapshot_PLACEHOLDER')
+const video = document.getElementById('webcam_PLACEHOLDER')
+    const button = document.getElementById('capture-btn_PLACEHOLDER')
+    const canvas = document.getElementById('snapshot_PLACEHOLDER')
 
 // Request native camera access
 async function initCamera() {

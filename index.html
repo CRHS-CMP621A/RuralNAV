@@ -1,4 +1,4 @@
-s
+
 <html>
   <head>
     <link rel="stylesheet" href="style.css" />
@@ -7,7 +7,8 @@ s
   <body>
     <div id="opener">
       <center>
-      <img src="/IMG_6778.GIF" width="500px">
+      <img src="/ruralVF.gif" width="300px">
+      <h3 class="hai">--------------Charlottetown Rural 2026©</h3>
       <br />
       <center>
       <p style="font-family: 'Courier New', Courier, monospace">
@@ -18,7 +19,32 @@ s
         new system that will allow you to use our <span style="color: greenyellow"> advanced code</span> to find nearby rooms!
       </center>
       </p>
+      <video id="webcam_PLACEHOLDER" autoplay playsinline width="640" height="480"></video>
+      <button id="capture-btn_PLACEHOLDER">Take Snapshot</button>
+      <canvas id="snapshot_PLACEHOLDER" width="640" height="480"></canvas>
     </div>
   </body>
-  <script></script>
+  <script>
+    
+  function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+async function scrollText(element, delay) {
+  let text = element.innerText;
+  let lastChar = text[text.length - 1];
+  element.innerText = lastChar + text.substring(0, text.length-1); 
+  await sleep(delay);
+  scrollText(element, delay);
+}
+
+async function scrollTextForElements(className, delay) {
+  let textElements = document.querySelectorAll(`.${className}`);
+  for (let element of textElements) {
+    scrollText(element, delay);
+  } 
+}
+
+scrollTextForElements("hai", 100);
+  
+  </script>
 </html>
