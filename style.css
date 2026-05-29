@@ -1,0 +1,12 @@
+body {
+  background-image: url("https://bettysgraphics.neocities.org/images/backgrounds/pattern%20448.jpg");
+}
+
+#opener {
+  display: grid;
+  margin: 50;
+  align-content: center;
+  font-family: "comic sans ms", "courier";
+  color: white;
+  background-color: black;
+}
