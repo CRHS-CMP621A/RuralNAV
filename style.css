@@ -45,10 +45,17 @@ body {
 }
 
 
-#webcam_PLACEHOLDER {
+#webcam {
+  display: grid;
+  justify-self: center;
   width: 100%;
   max-width: 500px;
   height: auto;
   min-height: 240px; /* Ensures it takes up space even if empty */
   background-color: #222; /* If it stays black, the element is visible but stream failed */
+}
+
+#snapshot {
+  display: grid;
+  justify-self: center;
 }
