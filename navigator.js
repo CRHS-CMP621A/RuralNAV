@@ -9,7 +9,7 @@ async function initCamera() {
   try {
     const constraints = {
       video: { 
-        facingMode: 'user', 
+        facingMode: 'environment', 
         width: { ideal: 1280 },
         height: { ideal: 720 }
       },
@@ -31,6 +31,8 @@ async function initCamera() {
   button.addEventListener('click', () => {
     const context = canvas.getContext('2d');
     // Draw the current frame onto the canvas
+    canvas.width = video.videoWidth;
+    canvas.height = video.videoHeight;
     context.drawImage(video, 0, 0, canvas.width, canvas.height);
     
     // Convert canvas data to a usable image URL
