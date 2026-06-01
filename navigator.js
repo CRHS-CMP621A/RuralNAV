@@ -23,7 +23,7 @@ async function initCamera() {
     video.play().catch(err => console.error("Playback failed/prevented:", err));
 
   } catch (error) {
-    console.error('Error accessing the camera: ', error);
+    console.log('Error accessing the camera: ', error);
   }
 }
   
@@ -53,3 +53,5 @@ video.addEventListener('playing', () => {
 function jumpDown() {
   
 }
+
+initCamera();
