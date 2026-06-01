@@ -9,7 +9,7 @@ async function initCamera() {
   try {
     const constraints = {
       video: { 
-        facingMode: 'environment', 
+        facingMode: "environment", 
         width: { ideal: 1280 },
         height: { ideal: 720 }
       },
