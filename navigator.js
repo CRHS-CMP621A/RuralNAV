@@ -1,5 +1,6 @@
 
 // VARIABLES
+// 
 const video = document.getElementById('webcam')
     const button = document.getElementById('capture-btn')
     const canvas = document.getElementById('snapshot')
