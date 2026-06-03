@@ -4,16 +4,6 @@ const imageInput = document.getElementById("image-input");
 const preview = document.getElementById("preview");
 const result = document.getElementById("result");
 
-imageInput.addEventListener("change", function (e) {
-  const file = e.target.files[0];
-  if (file) {
-    // Show image preview
-    preview.src = URL.createObjectURL(file);
-    preview.style.display = "block";
-    result.textContent = ""; // Clear previous result
-  }
-});
-
 async function processImage() {
   // Prefer uploaded image; otherwise capture a snapshot from webcam.
   let file = imageInput.files[0];

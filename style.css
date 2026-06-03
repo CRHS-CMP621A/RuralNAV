@@ -9,7 +9,6 @@ body {
   font-family: "comic sans ms", "courier";
   color: white;
   background-color: black;
-  
 }
 
 .scratchcatz {
@@ -28,7 +27,7 @@ body {
 
 #corner {
   grid-column: 1;
-  align-self: end;    /* Pushes to bottom */
+  align-self: end; /* Pushes to bottom */
   justify-self: start;
 }
 
@@ -38,16 +37,15 @@ body {
 
 #corner2 {
   grid-column: 3;
-  align-self: end;    /* Pushes to bottom */
+  align-self: end; /* Pushes to bottom */
   justify-self: end;
   transform: scaleX(-1);
-
 }
 
 #pyt {
-  display: flex;
-  rotate: 30;
-  align-self: flex-end;
+  top: 300;
+  right: 400;
+  align-self: center;
 }
 
 #webcam {
@@ -73,7 +71,7 @@ body {
   margin-top: 20px;
   padding: 10px 20px;
   font-size: 30px;
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Ppkj9ao2ddAj0Ck6M2GcEIKAN_xwWs9C2Q&s');
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Ppkj9ao2ddAj0Ck6M2GcEIKAN_xwWs9C2Q&s");
   color: black;
   border: none;
 }
