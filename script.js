@@ -3,7 +3,7 @@ function findRooms() {
   const result = document.getElementById("result");
   let rooms = []
   console.log("Now finding rooms...");
-  if ((result.textContent == "TEST")) {
+  if ((result.textContent.includes("TEST"))) {
     alert("TEST RECOGNIZED");
   } else {
     alert("Test Error.. If this wasn't supposed to show up, DISABLE IT!!");
