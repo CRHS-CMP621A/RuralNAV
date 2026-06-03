@@ -87,6 +87,20 @@ body {
   border: none;
 }
 
+#capture-btn:hover {
+  display: grid;
+  font-weight: bold;
+  font-family: "courier";
+  justify-self: center;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 30px;
+  background-image: url("https://bettysgraphics.neocities.org/images/backgrounds/stars%202.gif");
+  color: white;
+  text-decoration: underline;
+  border: none;
+}
+
 #note {
   display: grid;
   justify-self: center;

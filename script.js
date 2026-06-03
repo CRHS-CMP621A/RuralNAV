@@ -1,10 +1,3 @@
-// ROOM FINDER
-// This runs after text is fully processed.
-function findRooms() {
-  console.log("HELLO")
-  let scannedText = document.getElementById("result")
-}
-
 // PUTER
 // image FILE to text converter
 const imageInput = document.getElementById("image-input");
@@ -62,6 +55,7 @@ async function processImage() {
     // Now pass the data URL to img2txt
     const text = await puter.ai.img2txt(dataUrl);
     result.textContent = text || "No text found in image";
+    
   } catch (error) {
     result.textContent = "Error: " + error.message;
   }
