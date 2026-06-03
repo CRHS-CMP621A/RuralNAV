@@ -9,6 +9,7 @@ body {
   font-family: "comic sans ms", "courier";
   color: white;
   background-color: black;
+  border: white, 3px, solid;
 }
 
 .soy {
@@ -17,6 +18,7 @@ body {
   align-content: center;
   font-family: "comic sans ms", "courier";
   color: white;
+  border: white, 3px, solid;
   background-image: url('https://bettysgraphics.neocities.org/images/backgrounds/pattern%2022.jpg');
 }
 .scratchcatz {
@@ -54,6 +56,7 @@ body {
   position: absolute;
   top: 30;
   right: 40;
+  border: white, 3px, solid;
 }
 
 #webcam {
@@ -90,4 +93,11 @@ body {
   font-family: "comic sans ms", "courier";
   color: white;
   background-color: black;
+}
+
+#result {
+  color: yellow;
+  background-color: black;
+  margin: 70;
+  border: white, 3px, solid;
 }

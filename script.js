@@ -1,3 +1,10 @@
+// ROOM FINDER
+// This runs after text is fully processed.
+function findRooms() {
+  console.log("HELLO")
+  let scannedText = document.getElementById("result")
+}
+
 // PUTER
 // image FILE to text converter
 const imageInput = document.getElementById("image-input");
@@ -6,7 +13,7 @@ const result = document.getElementById("result");
 
 async function processImage() {
   // Prefer uploaded image; otherwise capture a snapshot from webcam.
-  let file = imageInput.files[0];
+  let file;
 
   if (!file) {
     // Dynamically match canvas internal dimensions to the incoming video resolution
@@ -58,6 +65,9 @@ async function processImage() {
   } catch (error) {
     result.textContent = "Error: " + error.message;
   }
+
+  // Finding rooms related to text
+  findRooms()
 }
 
 // webcam usage
@@ -145,8 +155,18 @@ initWebcam();
 const clickSound = new Audio('heehee.mp3');
 const image = document.getElementById('pytt');
 const sound = new Audio('heehee.mp3'); 
-
+const normalImage = 'pytt'; 
+const activeImage = 'https://media.tenor.com/B61bLDz43HkAAAAM/michael-jackson-smile.gif';
 image.addEventListener('click', () => {
-  sound.currentTime = 0; 
-  sound.play();
+    // Play the sound instantly
+    sound.currentTime = 0;
+    sound.play();
+
+    // Change the image immediately
+    image.src = activeImage;
+
+    // Wait 2 seconds (2000ms), then switch it back
+    setTimeout(() => {
+        image.src = 'https://preview.redd.it/this-mike-meme-is-working-overtime-man-v0-aoenisk5kq7g1.jpeg?auto=webp&s=0e6889666a336f552117bf266031ffc23f0939a9';
+    }, 2000); 
 });
