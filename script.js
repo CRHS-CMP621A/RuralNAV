@@ -1,12 +1,11 @@
 // findRooms()
 function findRooms() {
   const result = document.getElementById("result");
-  console.log("Now finding rooms...")
-  if (result.textContent="TEST") {
-    console.log("TEST RECOGNIZED")
-  }
-  else {
-    console.log("Test Error..")
+  console.log("Now finding rooms...");
+  if ((result.textContent = "TEST")) {
+    alert("TEST RECOGNIZED");
+  } else {
+    alert("Test Error..");
   }
 }
 
@@ -30,7 +29,7 @@ async function processImage() {
 
     // Convert the canvas frame into an actual File object and wait for completion
     const blob = await new Promise((resolve) =>
-      canvas.toBlob(resolve, "image/jpeg", 0.9),
+      canvas.toBlob(resolve, "image/jpeg", 0.9)
     );
 
     if (!blob) {
@@ -67,7 +66,7 @@ async function processImage() {
     // Now pass the data URL to img2txt
     const text = await puter.ai.img2txt(dataUrl);
     result.textContent = text || "No text found in image";
-    findRooms()
+    findRooms();
   } catch (error) {
     result.textContent = "Error: " + error.message;
   }
@@ -145,31 +144,32 @@ captureButton.addEventListener("click", () => {
       // fetch('/upload', { method: 'POST', body: formData });
     },
     "image/jpeg",
-    0.9,
+    0.9
   ); // Quality rating of 0.9
 });
 
 // Run the script on page load
 initWebcam();
 
-
 // rolando pistachio's code
 
-const clickSound = new Audio('heehee.mp3');
-const image = document.getElementById('pytt');
-const sound = new Audio('heehee.mp3'); 
-const normalImage = 'pytt'; 
-const activeImage = 'https://media.tenor.com/B61bLDz43HkAAAAM/michael-jackson-smile.gif';
-image.addEventListener('click', () => {
-    // Play the sound instantly
-    sound.currentTime = 0;
-    sound.play();
+const clickSound = new Audio("heehee.mp3");
+const image = document.getElementById("pytt");
+const sound = new Audio("heehee.mp3");
+const normalImage = "pytt";
+const activeImage =
+  "https://media.tenor.com/B61bLDz43HkAAAAM/michael-jackson-smile.gif";
+image.addEventListener("click", () => {
+  // Play the sound instantly
+  sound.currentTime = 0;
+  sound.play();
 
-    // Change the image immediately
-    image.src = activeImage;
+  // Change the image immediately
+  image.src = activeImage;
 
-    // Wait 2 seconds (2000ms), then switch it back
-    setTimeout(() => {
-        image.src = 'https://preview.redd.it/this-mike-meme-is-working-overtime-man-v0-aoenisk5kq7g1.jpeg?auto=webp&s=0e6889666a336f552117bf266031ffc23f0939a9';
-    }, 2000); 
+  // Wait 2 seconds (2000ms), then switch it back
+  setTimeout(() => {
+    image.src =
+      "https://preview.redd.it/this-mike-meme-is-working-overtime-man-v0-aoenisk5kq7g1.jpeg?auto=webp&s=0e6889666a336f552117bf266031ffc23f0939a9";
+  }, 2000);
 });
