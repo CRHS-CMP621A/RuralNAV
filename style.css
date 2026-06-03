@@ -11,6 +11,14 @@ body {
   background-color: black;
 }
 
+.soy {
+  display: grid;
+  margin: 50;
+  align-content: center;
+  font-family: "comic sans ms", "courier";
+  color: white;
+  background-image: url('https://bettysgraphics.neocities.org/images/backgrounds/pattern%2022.jpg');
+}
 .scratchcatz {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -43,9 +51,9 @@ body {
 }
 
 #pyt {
-  top: 300;
-  right: 400;
-  align-self: center;
+  position: absolute;
+  top: 30;
+  right: 40;
 }
 
 #webcam {

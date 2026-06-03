@@ -72,7 +72,7 @@ const constraints = {
   video: {
     width: { ideal: 1280 },
     height: { ideal: 720 },
-    facingMode: "user", // "user" for front camera, "environment" for rear camera
+    facingMode: "environment", // "user" for front camera, "environment" for rear camera
   },
   audio: false, // Set to true if you need microphone access alongside the video
 };
