@@ -143,7 +143,10 @@ initWebcam();
 // rolando pistachio's code
 
 const clickSound = new Audio('heehee.mp3');
-const btnclck = document.querySelector('hbutton');
-button.addEventListener('click', () => {
-  clickSound.play();
+const image = document.getElementById('pytt');
+const sound = new Audio('heehee.mp3'); 
+
+image.addEventListener('click', () => {
+  sound.currentTime = 0; 
+  sound.play();
 });
