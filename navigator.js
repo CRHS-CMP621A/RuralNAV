@@ -1,4 +1,3 @@
-
 // VARIABLES
 // 
 const video = document.getElementById('webcam')
@@ -52,9 +51,5 @@ video.addEventListener('playing', () => {
   // document.getElementById('status-dot').style.backgroundColor = 'red';
 });
 
-// Jump Down Function for moving to a spot
-function jumpDown() {
-  
-}
 
 initCamera();

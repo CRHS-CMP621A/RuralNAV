@@ -1,7 +1,9 @@
 <html>
   <head>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://js.puter.com/v2/"></script>
     <script defer src="navigator.js"></script>
+    <script src="script.js"></script>
   </head>
 
   <body>
@@ -44,7 +46,7 @@
     <div id="pee"> 
     <video id="webcam" autoplay playsinline muted width="640" height="480"></video>
     <br />
-    <button id="capture-btn">Take Snapshot</button>
+    <button id="capture-btn" onclick="processImage()">Take Snapshot</button>
     <br />
     <canvas id="snapshot" width="640" height="480"></canvas>
   </div>
