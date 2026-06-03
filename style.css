@@ -44,6 +44,11 @@ body {
 
 }
 
+#pyt {
+  display: flex;
+  rotate: 30;
+  align-self: flex-end;
+}
 
 #webcam {
   display: grid;
