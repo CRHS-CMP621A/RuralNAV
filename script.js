@@ -138,3 +138,12 @@ captureButton.addEventListener("click", () => {
 
 // Run the script on page load
 initWebcam();
+
+
+// rolando pistachio's code
+
+const clickSound = new Audio('heehee.mp3');
+const btnclck = document.querySelector('hbutton');
+button.addEventListener('click', () => {
+  clickSound.play();
+});
