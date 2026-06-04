@@ -9,67 +9,82 @@ function findRooms() {
 
   if (result.textContent.includes("TEST")) {
     rooms = "TestRoom 1, Testroom2, Testroom3"
+    document.getElementById("mapimage").src = "maps\\misc\\trollface.png"
     roomsDisplay.innerHTML = rooms;
   }
   else if (result.textContent.includes("WILLIS WAY")) {
     rooms = ["347, 312, 308, 306, 304, 303, 302, 301, 300"];
+    document.getElementById("mapimage").src = "maps\\rooms\\willisay.jpg"
     roomsDisplay.innerHTML = rooms;
   }
   else if (result.textContent.includes("CARSON CRES.")) {
     rooms = ["347, 343, 342"];
-    document.getElementById("mapimage").src = "maps\rooms\carson.png";
+    document.getElementById("mapimage").src = "maps\\rooms\\carson.png"
     roomsDisplay.innerHTML = rooms;
   }
   else if (result.textContent.includes("COSTELLO ROAD")) {
     rooms = ["343, 342, 341, 340, 339, 338"];
+    document.getElementById("mapimage").src = "maps\\rooms\\costello.png"
     roomsDisplay.innerHTML = rooms;
   }
   else if (result.textContent.includes("SHAKESPEARE ST.")) {
     rooms = ["338, 337, 334, 333 , 331, 330"];
+    document.getElementById("mapimage").src = "maps\\rooms\\Shakingmyspear.png"
     roomsDisplay.innerHTML = rooms;
   }
   else if (result.textContent.includes("MEMORY LANE")) {
     rooms = ["347, 330, 320, 319"];
+    document.getElementById("mapimage").src = "maps\\rooms\\memory.png"
     roomsDisplay.innerHTML = rooms;
   }
   else if (result.textContent.includes("CONNOLLY COURT")) {
     rooms = ["329, 325, 324, 322"];
+    document.getElementById("mapimage").src = "maps\\rooms\\conno court.png"
     roomsDisplay.innerHTML = rooms;
   }
   else if (result.textContent.includes("BIOLOGY BLVD")) {
     rooms = ["108, 107, 106, 105, 104, 103, 102, Greenhouse"];
+    document.getElementById("mapimage").src = "maps\\rooms\\basement.png"
     roomsDisplay.innerHTML = rooms;
   }
   else if (result.textContent.includes("HARMONY LANE")) {
     rooms = ["232, 228, 227, 225"];
+    document.getElementById("mapimage").src = "maps\\underrooms\\harmony lane.png"
     roomsDisplay.innerHTML = rooms;
   }
   else if (result.textContent.includes("LABRATORY LANE")) {
     rooms = ["206, 205, 203, 202, 201, 200"];
+    document.getElementById("mapimage").src = "maps\\underrooms\\main.png"
     roomsDisplay.innerHTML = rooms;
   }
   else if (result.textContent.includes("TRADES ROUTE")) {
     rooms = ["213, 208"];
+    document.getElementById("mapimage").src = "maps\\underrooms\\main.png"
     roomsDisplay.innerHTML = rooms;
   }
-  else if (result.textContent.includes("DRAME DRIVE")) {
+  else if (result.textContent.includes("DRAMA DRIVE")) {
     rooms = ["221, 220, 218, 217"];
+    document.getElementById("mapimage").src = "maps\\underrooms\\main.png"
     roomsDisplay.innerHTML = rooms;
   }
   else if (result.textContent.includes("RUE ROUGE")) {
     rooms = ["239, 237, 236, 234, 233"];
+    document.getElementById("mapimage").src = "maps\\underrooms\\rue rouge.png"
     roomsDisplay.innerHTML = rooms;
   }
   else if (result.textContent.includes("ATHLETICS AVE.")) {
     rooms = ["249, Foods Lab, 243, 242, 241"];
+    document.getElementById("mapimage").src = "maps\\underrooms\\athletics ave.png"
     roomsDisplay.innerHTML = rooms;
   }
   else if (result.textContent.includes("RAIDER ROAD")) {
     rooms = ["Office, Staff Room, Student Services, IB Office"];
+    document.getElementById("mapimage").src = "maps\\underrooms\\raider road.png"
     roomsDisplay.innerHTML = rooms;
   }
   else {
     roomsDisplay.innerHTML = "NO MATCH";
+    document.getElementById("mapimage").src = "maps\\misc\\scanERROR.png"
   }
 }
 
