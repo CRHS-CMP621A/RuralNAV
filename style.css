@@ -20,7 +20,7 @@ body {
   color: white;
   border: white, 3px, solid;
   background-image: url("https://bettysgraphics.neocities.org/images/backgrounds/pattern%2022.jpg");
- display: none;
+  display: none;
 }
 .scratchcatz {
   display: grid;
@@ -126,9 +126,8 @@ body {
 
 #nya {
   position: relative;
-  top: 30;
-  right: 1000;
-  
-  transform: rotate(-75deg);
+  top: -1;
+  right: 30;
 
+  transform: rotate(-75deg);
 }

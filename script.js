@@ -11,60 +11,60 @@ function findRooms() {
     rooms = "TestRoom 1, Testroom2, Testroom3"
     roomsDisplay.innerHTML = rooms;
   }
-  else if (result.textContent.includes("Willis Way")) {
+  else if (result.textContent.includes("WILLIS WAY")) {
     rooms = ["347, 312, 308, 306, 304, 303, 302, 301, 300"];
     roomsDisplay.innerHTML = rooms;
   }
-  else if (result.textContent.includes("Carson Cres")) {
+  else if (result.textContent.includes("CARSON CRES.")) {
     rooms = ["347, 343, 342"];
     document.getElementById("mapimage").src = "maps\rooms\carson.png";
     roomsDisplay.innerHTML = rooms;
   }
-  else if (result.textContent.includes("Costello Road")) {
+  else if (result.textContent.includes("COSTELLO ROAD")) {
     rooms = ["343, 342, 341, 340, 339, 338"];
     roomsDisplay.innerHTML = rooms;
   }
-  else if (result.textContent.includes("Shakespeare St")) {
+  else if (result.textContent.includes("SHAKESPEARE ST.")) {
     rooms = ["338, 337, 334, 333 , 331, 330"];
     roomsDisplay.innerHTML = rooms;
   }
-  else if (result.textContent.includes("Memory Lane")) {
+  else if (result.textContent.includes("MEMORY LANE")) {
     rooms = ["347, 330, 320, 319"];
     roomsDisplay.innerHTML = rooms;
   }
-  else if (result.textContent.includes("Connolly Court")) {
+  else if (result.textContent.includes("CONNOLLY COURT")) {
     rooms = ["329, 325, 324, 322"];
     roomsDisplay.innerHTML = rooms;
   }
-  else if (result.textContent.includes("Biology BLVD")) {
+  else if (result.textContent.includes("BIOLOGY BLVD")) {
     rooms = ["108, 107, 106, 105, 104, 103, 102, Greenhouse"];
     roomsDisplay.innerHTML = rooms;
   }
-  else if (result.textContent.includes("Harmony Lane")) {
+  else if (result.textContent.includes("HARMONY LANE")) {
     rooms = ["232, 228, 227, 225"];
     roomsDisplay.innerHTML = rooms;
   }
-  else if (result.textContent.includes("Labratory Lane")) {
+  else if (result.textContent.includes("LABRATORY LANE")) {
     rooms = ["206, 205, 203, 202, 201, 200"];
     roomsDisplay.innerHTML = rooms;
   }
-  else if (result.textContent.includes("Trades Route")) {
+  else if (result.textContent.includes("TRADES ROUTE")) {
     rooms = ["213, 208"];
     roomsDisplay.innerHTML = rooms;
   }
-  else if (result.textContent.includes("Drama Drive")) {
+  else if (result.textContent.includes("DRAME DRIVE")) {
     rooms = ["221, 220, 218, 217"];
     roomsDisplay.innerHTML = rooms;
   }
-  else if (result.textContent.includes("Rue Rouge")) {
+  else if (result.textContent.includes("RUE ROUGE")) {
     rooms = ["239, 237, 236, 234, 233"];
     roomsDisplay.innerHTML = rooms;
   }
-  else if (result.textContent.includes("Athletics Ave.")) {
+  else if (result.textContent.includes("ATHLETICS AVE.")) {
     rooms = ["249, Foods Lab, 243, 242, 241"];
     roomsDisplay.innerHTML = rooms;
   }
-  else if (result.textContent.includes("Raider Road")) {
+  else if (result.textContent.includes("RAIDER ROAD")) {
     rooms = ["Office, Staff Room, Student Services, IB Office"];
     roomsDisplay.innerHTML = rooms;
   }
