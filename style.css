@@ -19,7 +19,8 @@ body {
   font-family: "comic sans ms", "courier";
   color: white;
   border: white, 3px, solid;
-  background-image: url('https://bettysgraphics.neocities.org/images/backgrounds/pattern%2022.jpg');
+  background-image: url("https://bettysgraphics.neocities.org/images/backgrounds/pattern%2022.jpg");
+ display: none;
 }
 .scratchcatz {
   display: grid;
@@ -114,4 +115,20 @@ body {
   background-color: black;
   margin: 70;
   border: white, 3px, solid;
+}
+
+#roomlist {
+  color: greenyellow;
+  background-color: black;
+  margin: 70;
+  border: white, 3px, solid;
+}
+
+#nya {
+  position: absolute;
+  top: 30;
+  right: 1000;
+  
+  transform: rotate(-75deg);
+
 }
