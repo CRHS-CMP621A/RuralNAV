@@ -17,6 +17,7 @@ function findRooms() {
   }
   else if (result.textContent.includes("Carson Cres")) {
     rooms = ["347, 343, 342"];
+    document.getElementById("mapimage").src = "maps\rooms\carson.png";
     roomsDisplay.innerHTML = rooms;
   }
   else if (result.textContent.includes("Costello Road")) {
