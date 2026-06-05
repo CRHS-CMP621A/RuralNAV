@@ -17,7 +17,7 @@ function findRooms() {
     document.getElementById("mapimage").src = "maps\\rooms\\willisay.jpg"
     roomsDisplay.innerHTML = rooms;
   }
-  else if (result.textContent.includes("CARSON CRES.")) {
+  else if (result.textContent.includes("CARSON CRES.") || result.textContent.includes("CARSON CRES")) {
     rooms = ["347, 343, 342"];
     document.getElementById("mapimage").src = "maps\\rooms\\carson.png"
     roomsDisplay.innerHTML = rooms;
@@ -27,7 +27,7 @@ function findRooms() {
     document.getElementById("mapimage").src = "maps\\rooms\\costello.png"
     roomsDisplay.innerHTML = rooms;
   }
-  else if (result.textContent.includes("SHAKESPEARE ST.")) {
+  else if (result.textContent.includes("SHAKESPEARE ST.") || result.textContent.includes("SHAKESPEARE ST")) {
     rooms = ["338, 337, 334, 333 , 331, 330"];
     document.getElementById("mapimage").src = "maps\\rooms\\Shakingmyspear.png"
     roomsDisplay.innerHTML = rooms;
@@ -72,7 +72,7 @@ function findRooms() {
     document.getElementById("mapimage").src = "maps\\underrooms\\rue rouge.png"
     roomsDisplay.innerHTML = rooms;
   }
-  else if (result.textContent.includes("ATHLETICS AVE.")) {
+  else if (result.textContent.includes("ATHLETICS AVE.") || result.textContent.includes("ATHLETICS AVE")) {
     rooms = ["249, Foods Lab, 243, 242, 241"];
     document.getElementById("mapimage").src = "maps\\underrooms\\athletics ave.png"
     roomsDisplay.innerHTML = rooms;
@@ -124,6 +124,11 @@ async function processImage() {
   preview.src = URL.createObjectURL(file);
   preview.style.display = "block";
   result.textContent = ""; // Clear previous result
+
+  const resultsState = document.querySelector(".soy");
+  if (resultsState) {
+    resultsState.style.display = "none";
+  }
 
   // continue PUTER
 
@@ -212,9 +217,8 @@ captureButton.addEventListener("click", () => {
       console.log("File object successfully created:", snapshotFile);
       file = snapshotFile; // Store in a variable for later use (e.g., sending to server)
 
-      //   display the captured image in the preview element
-      preview.src = URL.createObjectURL(file);
-      preview.style.display = "block";
+      // Hide the preview image so the still frame does not appear immediately
+      preview.style.display = "none";
       result.textContent = ""; // Clear previous result
 
       // Optional: Send to server via FormData API
